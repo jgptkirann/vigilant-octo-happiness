@@ -34,6 +34,14 @@
     @apply bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
   }
   
+  .btn-red {
+    @apply bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+  }
+  
+  .btn-outline-red {
+    @apply border-red-300 text-red-700 bg-white hover:bg-red-50 focus:ring-red-500;
+  }
+  
   .btn-sm {
     @apply px-3 py-1.5 text-xs;
   }
