@@ -10,8 +10,8 @@ import {
   UserGroupIcon,
   ChartBarIcon
 } from '@heroicons/react/24/outline';
-import { useFacilities } from '../hooks/useFacilities';
-import { formatCurrency } from '../utils/helpers';
+import { useFacilities } from '../hooks/useFacilities.ts';
+import { formatCurrency } from '../utils/helpers.ts';
 
 const HomePage: React.FC = () => {
   // Get featured facilities

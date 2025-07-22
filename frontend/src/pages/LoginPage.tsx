@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/AuthContext.tsx';
 import { 
   MapPinIcon, 
   EyeIcon, 
   EyeSlashIcon,
   ArrowLeftIcon
 } from '@heroicons/react/24/outline';
-import LoadingSpinner from '../components/LoadingSpinner';
-import { isValidEmail, isValidNepalPhone } from '../utils/helpers';
+import LoadingSpinner from '../components/LoadingSpinner.tsx';
+import { isValidEmail, isValidNepalPhone } from '../utils/helpers.ts';
 
 const LoginPage: React.FC = () => {
   const [formData, setFormData] = useState({

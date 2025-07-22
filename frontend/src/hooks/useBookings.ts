@@ -1,7 +1,7 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { bookingsAPI } from '../services/api';
+import { bookingsAPI } from '../services/api.ts';
 import { Booking, BookingForm } from '../types';
-import { getErrorMessage } from '../utils/helpers';
+import { getErrorMessage } from '../utils/helpers.ts';
 import toast from 'react-hot-toast';
 
 // Query keys

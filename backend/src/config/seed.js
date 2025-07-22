@@ -235,7 +235,7 @@ const seedDatabase = async () => {
         total_amount: 1500,
         commission_amount: 150,
         status: 'completed',
-        booking_code: 'FB240115001'
+        booking_code: 'FB24011500'
       },
       {
         user_id: 4, // Sita Gurung
@@ -247,7 +247,7 @@ const seedDatabase = async () => {
         total_amount: 1800,
         commission_amount: 180,
         status: 'completed',
-        booking_code: 'FB240116001'
+        booking_code: 'FB24011600'
       },
       {
         user_id: 5, // Hari Thapa
@@ -259,7 +259,7 @@ const seedDatabase = async () => {
         total_amount: 1800,
         commission_amount: 180,
         status: 'confirmed',
-        booking_code: 'FB240117001'
+        booking_code: 'FB24011700'
       },
       {
         user_id: 6, // Maya Rai
@@ -271,7 +271,7 @@ const seedDatabase = async () => {
         total_amount: 1500,
         commission_amount: 150,
         status: 'pending',
-        booking_code: 'FB240118001'
+        booking_code: 'FB24011800'
       }
     ];
 

@@ -1,7 +1,7 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { facilitiesAPI } from '../services/api';
+import { facilitiesAPI } from '../services/api.ts';
 import { Facility, FacilityDetails, SearchFilters, SlotResponse, FacilityForm } from '../types';
-import { getErrorMessage } from '../utils/helpers';
+import { getErrorMessage } from '../utils/helpers.ts';
 import toast from 'react-hot-toast';
 
 // Query keys

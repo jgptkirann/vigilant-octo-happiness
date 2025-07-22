@@ -9,10 +9,10 @@ import {
   CurrencyDollarIcon,
   ArrowLeftIcon
 } from '@heroicons/react/24/outline';
-import { useFacility } from '../hooks/useFacilities';
-import { useAuth } from '../context/AuthContext';
-import { formatCurrency, formatTime } from '../utils/helpers';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { useFacility } from '../hooks/useFacilities.ts';
+import { useAuth } from '../context/AuthContext.tsx';
+import { formatCurrency, formatTime } from '../utils/helpers.ts';
+import LoadingSpinner from '../components/LoadingSpinner.tsx';
 
 const FacilityDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();

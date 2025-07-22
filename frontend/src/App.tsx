@@ -4,21 +4,21 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { Toaster } from 'react-hot-toast';
 
-import { AuthProvider, useAuth } from './context/AuthContext';
+import { AuthProvider, useAuth } from './context/AuthContext.tsx';
 
 // Import pages
-import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import FacilitiesPage from './pages/FacilitiesPage';
-import FacilityDetailPage from './pages/FacilityDetailPage';
-import BookingPage from './pages/BookingPage';
-import DashboardPage from './pages/DashboardPage';
-import ProfilePage from './pages/ProfilePage';
+import HomePage from './pages/HomePage.tsx';
+import LoginPage from './pages/LoginPage.tsx';
+import RegisterPage from './pages/RegisterPage.tsx';
+import FacilitiesPage from './pages/FacilitiesPage.tsx';
+import FacilityDetailPage from './pages/FacilityDetailPage.tsx';
+import BookingPage from './pages/BookingPage.tsx';
+import DashboardPage from './pages/DashboardPage.tsx';
+import ProfilePage from './pages/ProfilePage.tsx';
 
 // Import components
-import Layout from './components/Layout';
-import LoadingSpinner from './components/LoadingSpinner';
+import Layout from './components/Layout.tsx';
+import LoadingSpinner from './components/LoadingSpinner.tsx';
 
 // Create a client
 const queryClient = new QueryClient({

@@ -8,10 +8,10 @@ import {
   UserIcon,
   PlusIcon
 } from '@heroicons/react/24/outline';
-import { useAuth } from '../context/AuthContext';
-import { useBookings } from '../hooks/useBookings';
-import { formatCurrency, formatDate, formatTime, getStatusColor } from '../utils/helpers';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { useAuth } from '../context/AuthContext.tsx';
+import { useBookings } from '../hooks/useBookings.ts';
+import { formatCurrency, formatDate, formatTime, getStatusColor } from '../utils/helpers.ts';
+import LoadingSpinner from '../components/LoadingSpinner.tsx';
 
 const DashboardPage: React.FC = () => {
   const { user } = useAuth();

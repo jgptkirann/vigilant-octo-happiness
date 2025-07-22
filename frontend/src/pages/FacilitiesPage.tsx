@@ -6,10 +6,10 @@ import {
   FunnelIcon,
   MagnifyingGlassIcon
 } from '@heroicons/react/24/outline';
-import { useFacilities } from '../hooks/useFacilities';
-import { formatCurrency, debounce } from '../utils/helpers';
+import { useFacilities } from '../hooks/useFacilities.ts';
+import { formatCurrency, debounce } from '../utils/helpers.ts';
 import { SearchFilters } from '../types';
-import LoadingSpinner from '../components/LoadingSpinner';
+import LoadingSpinner from '../components/LoadingSpinner.tsx';
 
 const FacilitiesPage: React.FC = () => {
   const [filters, setFilters] = useState<SearchFilters>({

@@ -14,7 +14,7 @@ import {
   SearchFilters,
   FacilityForm
 } from '../types';
-import { getStorageItem, removeStorageItem } from '../utils/helpers';
+import { getStorageItem, removeStorageItem } from '../utils/helpers.ts';
 
 // Create axios instance
 const api = axios.create({

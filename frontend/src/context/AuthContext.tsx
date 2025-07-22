@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { User, AuthContextType, RegisterForm } from '../types';
-import { authAPI } from '../services/api';
-import { getStorageItem, setStorageItem, removeStorageItem, getErrorMessage } from '../utils/helpers';
+import { authAPI } from '../services/api.ts';
+import { getStorageItem, setStorageItem, removeStorageItem, getErrorMessage } from '../utils/helpers.ts';
 import toast from 'react-hot-toast';
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);

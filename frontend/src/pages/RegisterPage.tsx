@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/AuthContext.tsx';
 import { 
   MapPinIcon, 
   EyeIcon, 
@@ -9,8 +9,8 @@ import {
   UserIcon,
   BuildingOfficeIcon
 } from '@heroicons/react/24/outline';
-import LoadingSpinner from '../components/LoadingSpinner';
-import { isValidEmail, isValidNepalPhone, isValidPassword } from '../utils/helpers';
+import LoadingSpinner from '../components/LoadingSpinner.tsx';
+import { isValidEmail, isValidNepalPhone, isValidPassword } from '../utils/helpers.ts';
 import { RegisterForm } from '../types';
 
 const RegisterPage: React.FC = () => {

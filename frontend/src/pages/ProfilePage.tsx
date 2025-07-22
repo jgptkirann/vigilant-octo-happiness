@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/AuthContext.tsx';
 import { 
   UserIcon, 
   EnvelopeIcon, 
@@ -10,8 +10,8 @@ import {
   CheckIcon,
   XMarkIcon
 } from '@heroicons/react/24/outline';
-import { formatDate } from '../utils/helpers';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { formatDate } from '../utils/helpers.ts';
+import LoadingSpinner from '../components/LoadingSpinner.tsx';
 
 const ProfilePage: React.FC = () => {
   const { user } = useAuth();
