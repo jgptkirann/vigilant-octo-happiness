@@ -16,6 +16,14 @@ import BookingPage from './pages/BookingPage.tsx';
 import DashboardPage from './pages/DashboardPage.tsx';
 import ProfilePage from './pages/ProfilePage.tsx';
 
+// Import missing pages
+import BookingsListPage from './pages/BookingsListPage.tsx';
+import BookingDetailPage from './pages/BookingDetailPage.tsx';
+import OwnerFacilitiesPage from './pages/owner/OwnerFacilitiesPage.tsx';
+import OwnerFacilityDetailPage from './pages/owner/OwnerFacilityDetailPage.tsx';
+import AddFacilityPage from './pages/owner/AddFacilityPage.tsx';
+import OwnerBookingsPage from './pages/owner/OwnerBookingsPage.tsx';
+
 // Import components
 import Layout from './components/Layout.tsx';
 import LoadingSpinner from './components/LoadingSpinner.tsx';
@@ -165,6 +173,85 @@ function App() {
                   <ProtectedRoute>
                     <Layout>
                       <BookingPage />
+                    </Layout>
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/bookings"
+                element={
+                  <ProtectedRoute>
+                    <Layout>
+                      <BookingsListPage />
+                    </Layout>
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/bookings/:id"
+                element={
+                  <ProtectedRoute>
+                    <Layout>
+                      <BookingDetailPage />
+                    </Layout>
+                  </ProtectedRoute>
+                }
+              />
+
+              {/* Owner routes */}
+              <Route
+                path="/owner/facilities"
+                element={
+                  <ProtectedRoute requiredRole="owner">
+                    <Layout>
+                      <OwnerFacilitiesPage />
+                    </Layout>
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/owner/facilities/new"
+                element={
+                  <ProtectedRoute requiredRole="owner">
+                    <Layout>
+                      <AddFacilityPage />
+                    </Layout>
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/owner/facilities/:id"
+                element={
+                  <ProtectedRoute requiredRole="owner">
+                    <Layout>
+                      <OwnerFacilityDetailPage />
+                    </Layout>
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/owner/bookings"
+                element={
+                  <ProtectedRoute requiredRole="owner">
+                    <Layout>
+                      <OwnerBookingsPage />
+                    </Layout>
+                  </ProtectedRoute>
+                }
+              />
+
+              {/* Admin routes - TODO: Implement admin pages */}
+              <Route
+                path="/admin/*"
+                element={
+                  <ProtectedRoute requiredRole="admin">
+                    <Layout>
+                      <div className="min-h-screen flex items-center justify-center">
+                        <div className="text-center">
+                          <h1 className="text-2xl font-bold text-gray-900 mb-4">Admin Pages</h1>
+                          <p className="text-gray-600">Admin functionality coming soon...</p>
+                        </div>
+                      </div>
                     </Layout>
                   </ProtectedRoute>
                 }
